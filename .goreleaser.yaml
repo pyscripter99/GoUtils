@@ -74,6 +74,15 @@ builds:
       - linux
       - windows
       - darwin
+  - id: logname
+    main: ./logname
+    binary: logname
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
 
 upx:
   - enabled: true
