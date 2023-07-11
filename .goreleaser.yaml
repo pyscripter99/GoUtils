@@ -56,6 +56,24 @@ builds:
       - linux
       - windows
       - darwin
+  - id: touch
+    main: ./touch
+    binary: touch
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+  - id: link
+    main: ./link
+    binary: link
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
 
 upx:
   - enabled: true
