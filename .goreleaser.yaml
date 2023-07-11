@@ -83,6 +83,15 @@ builds:
       - linux
       - windows
       - darwin
+  - id: sleep
+    main: ./sleep
+    binary: sleep
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
 
 upx:
   - enabled: true
