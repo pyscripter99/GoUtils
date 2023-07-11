@@ -92,6 +92,15 @@ builds:
       - linux
       - windows
       - darwin
+  - id: seq
+    main: ./seq
+    binary: seq
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
 
 upx:
   - enabled: true
